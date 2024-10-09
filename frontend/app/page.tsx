@@ -154,7 +154,7 @@ export default function Home() {
             }
             className="text-gray-300"
             avatarProps={{
-              src: "/icons/me.jpeg",
+              src: "/Icons/me.jpeg",
             }}
           />
         </div>
