@@ -1,7 +1,6 @@
 import os
 from dotenv import load_dotenv
 from app import app
-from db.__init__ import init_db
 
 # Use absolute path to load .env
 load_dotenv()
