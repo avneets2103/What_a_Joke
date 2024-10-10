@@ -9,7 +9,7 @@ import { BACKEND_URI } from "@/CONSTANTS";
 export default function Home() {
   const placeholders = [
     "Enter your joke here!",
-    "Yo mama is so fat ...",
+    "Yo mama is soo fat ...",
     "There was a pregnant ant ...",
     "An asian guy entered the bar ...",
     "I made a chemistry joke ...",
