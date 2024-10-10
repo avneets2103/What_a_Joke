@@ -2,7 +2,6 @@ absl-py==2.1.0
 annotated-types==0.7.0
 astunparse==1.6.3
 blinker==1.8.2
-blis==1.0.1
 boto3==1.35.33
 botocore==1.35.33
 catalogue==2.0.10
@@ -20,7 +19,6 @@ Flask-Cors==5.0.0
 Flask-PyMongo==2.3.0
 flatbuffers==24.3.25
 gast==0.6.0
-gensim==4.3.3
 google-pasta==0.2.0
 grpcio==1.66.2
 h5py==3.12.1
@@ -42,7 +40,9 @@ ml-dtypes==0.4.1
 murmurhash==1.0.10
 namex==0.0.8
 nltk==3.9.1
-numpy>=1.20,<3.0
+blis==0.7.5
+gensim==4.3.3
+numpy<2.0,>=1.18.5
 opt_einsum==3.4.0
 optree==0.13.0
 packaging==24.1
