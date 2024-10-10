@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { PlaceholdersAndVanishInput } from "@/components/ui/placeholders-and-vanish-input";
 import { Button, Chip, CircularProgress } from "@nextui-org/react";
 import { User, Link } from "@nextui-org/react";
+import axios from "axios";
+import { BACKEND_URI } from "@/CONSTANTS";
 
 export default function Home() {
   const placeholders = [
@@ -17,17 +19,17 @@ export default function Home() {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setJoke(e.target.value);
   };
-  const onSubmit = () => {
+  const onSubmit = async () => {
     if(joke.length==0) return;
     setIsLoading(true);
     setResults(false);
-    setTimeout(() => {
-      console.log("fired");
-      setIsLoading(false); 
-      setResults(true);
-      setCurrentJoke(joke);
-      setJoke("");
-    }, 2000);
+    const jokeAnalysis = await axios.post(`${BACKEND_URI}/auth/jokeAnalysis`, {joke: joke});
+    setHumorScore(jokeAnalysis.data.humorScore);
+    setOffenseScore(jokeAnalysis.data.offenseScore);
+    setIsLoading(false); 
+    setResults(true);
+    setCurrentJoke(joke);
+    setJoke("");
   };
   type ButtonType = "warning" | "default" | "primary" | "secondary" | "success" | "danger" | undefined;
   const [results, setResults] = useState(false);

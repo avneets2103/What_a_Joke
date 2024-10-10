@@ -1,0 +1,4 @@
+.vscode
+python_server/venv
+python_server/.env
+python_server/.vscode
