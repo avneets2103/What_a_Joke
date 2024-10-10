@@ -82,9 +82,6 @@ export default function Home() {
               onSubmit={onSubmit}
             />
           </div>
-          <Button color="warning" type="submit" variant="faded" onPress={onSubmit}>
-            Analyze
-          </Button>
         </div>
       </div>
       {isLoading && (
