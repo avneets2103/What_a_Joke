@@ -2,6 +2,8 @@ absl-py==2.1.0
 annotated-types==0.7.0
 astunparse==1.6.3
 blinker==1.8.2
+# Update blis to a compatible version with thinc
+blis>=1.0.0,<1.1.0  # Adjust as needed
 boto3==1.35.33
 botocore==1.35.33
 catalogue==2.0.10
@@ -19,6 +21,7 @@ Flask-Cors==5.0.0
 Flask-PyMongo==2.3.0
 flatbuffers==24.3.25
 gast==0.6.0
+gensim>=4.3.3  # Update if needed
 google-pasta==0.2.0
 grpcio==1.66.2
 h5py==3.12.1
@@ -40,9 +43,7 @@ ml-dtypes==0.4.1
 murmurhash==1.0.10
 namex==0.0.8
 nltk==3.9.1
-blis==0.7.5
-gensim==4.3.3
-numpy<2.0,>=1.18.5
+numpy>=2.0,<3.0  # Ensure this is consistent
 opt_einsum==3.4.0
 optree==0.13.0
 packaging==24.1
@@ -72,7 +73,7 @@ tensorboard-data-server==0.7.2
 tensorflow==2.17.0
 termcolor==2.5.0
 textblob==0.18.0.post0
-thinc==8.3.2
+thinc==8.3.2  # Keep this version if necessary
 tqdm==4.66.5
 typer==0.12.5
 typing_extensions==4.12.2
