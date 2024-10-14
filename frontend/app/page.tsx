@@ -129,14 +129,14 @@ export default function Home() {
           >
             Source Code
           </Chip>
-          <Chip
+          {/* <Chip
             color="warning"
             variant="dot"
             onClick={() => window.location.href = "/about"}
             className="select-none text-gray-400"
           >
             About Us
-          </Chip>
+          </Chip> */}
         </div>
         <div>
           <User
