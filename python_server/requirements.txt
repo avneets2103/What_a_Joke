@@ -1,0 +1,12 @@
+Flask==3.0.3
+Flask-Cors==5.0.0
+Werkzeug==3.0.4
+spacy>=3.0.0
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl#sha256=1932429db727d4bff3deed6b34cfc05df17794f4a52eeb26cf8928f7c1a0fb85
+gensim>=4.3.3
+boto3==1.35.33
+emoji==2.14.0
+textblob==0.18.0.post0
+requests==2.32.3
+python-dotenv==1.0.1
+numpy>=1.19.3,<3.0
